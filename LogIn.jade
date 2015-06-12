@@ -1,0 +1,32 @@
+# DegreeTracker
+doctype html
+html
+  style.
+    body{
+    background-color: 	#DEB887;
+    }
+  head
+    meta(charset='ISO-8859-1')
+    title Insert title here
+  center
+    body
+        block content
+      p
+        font(face='verdana', color='#0000CD')
+          #UserPass
+            | Enter Username and Password
+            form(action='/login', method='post')
+              p.username
+                | Username:
+                br
+                |  
+                input(type='text', name='username', placeholder='Username')
+              |  
+              p.password
+                | Password:
+                br
+                |  
+                input(type='password', name='password', placeholder='Password')
+              |  
+              .Log.In
+                input(type='submit', value='Log In')
