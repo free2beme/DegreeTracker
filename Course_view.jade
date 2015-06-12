@@ -1,0 +1,38 @@
+# DegreeTracker
+extends layout
+
+block content
+	h1= message
+    
+		h3 Data
+		table
+			- for (var r in rows)
+				tr
+					td= rows[r].CRN
+					td= rows[r].Instructor
+					td= rows[r].Course_ID
+					td= rows[r].Title
+					td= rows[r].CreditHours
+					td= rows[r].Days
+					td= rows[r].Times
+					td= rows[r].BldgRoom
+					td= rows[r].StartDate
+					td= rows[r].EndDate
+					td= rows[r].Semester_ID
+					td
+						input(type='checkbox', checked=false, onclick='handleClick(this)')
+	button(class="btn", data-action="bea").
+			Above 100 level 
+	br
+	button(class="btn", data-action="bea").
+			Above 300 level
+	br 
+	button(class="btn", data-action="bea").
+			Degree Courses Per Semester
+	br
+	button(class="btn", data-action="bea").
+			Degree Requirements
+	br
+	input(type='text', name='Days', placeholder='Days')
+	br
+		
