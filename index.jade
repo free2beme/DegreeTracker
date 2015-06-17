@@ -1,0 +1,15 @@
+# DegreeTrackerextends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+   div
+    form(method='post')
+      p Enter the studnets ID number:
+      input(type='text',name='Student_ID',id='Student_ID')
+                  
+      p Enter the current Semester ID:
+      input(type='text',name='Semester_ID',id='Semester_ID')        
+      
+      input(type='submit',name='submit',value='submit')
